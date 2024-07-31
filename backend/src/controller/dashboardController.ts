@@ -48,22 +48,22 @@ export const getDashboardMetrics = async (
       },
     });
 
-    /** //! Não sei se vai funcionar */
+    /** //! Não funcionou, vou fazer um TODO para consertar depois */
     /** Faixa Etária dos Funcionários */
-    const ageGroups = await prisma.$queryRaw`
-      SELECT
-        CASE
-          WHEN age < 30 then 'Under 30'
-          WHEN age BETWEEN 30 AND 40 THEN '30-40'
-          WHEN age BETWEEN 40 AND 50 then '40-50'
-          ELSE 'Over 50'
-        END as age_group, count(*)
-      FROM (
-        SELECT DATE_PART('year', AGE(birthDate)) as age
-        FROM "Employee"
-      ) as age
-      GROUP BY age_group
-    `;
+    // const ageGroups = await prisma.$queryRaw`
+    //   SELECT
+    //     CASE
+    //       WHEN age < 30 then 'Under 30'
+    //       WHEN age BETWEEN 30 AND 40 THEN '30-40'
+    //       WHEN age BETWEEN 40 AND 50 then '40-50'
+    //       ELSE 'Over 50'
+    //     END as age_group, count(*)
+    //   FROM (
+    //     SELECT DATE_PART('year', AGE(birthDate)) as age
+    //     FROM "Employee"
+    //   ) as age
+    //   GROUP BY age_group
+    // `;
 
     /** Distribuição por Raça */
     const raceDistribution = await prisma.employee.groupBy({
@@ -106,7 +106,7 @@ export const getDashboardMetrics = async (
       hiresByType,
       terminationsByReason,
       employeesByState,
-      ageGroups,
+      // ageGroups,
       raceDistribution,
       hierarchyLevels,
       hiresByState,
