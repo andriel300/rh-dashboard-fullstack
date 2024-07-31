@@ -1,11 +1,10 @@
-
 # Gerenciamento de Inventório
 
 ![Inventory Management](https://example.com/banner.png)
 
 ## Descrição
 
-Este é um sistema de gerenciamento de inventário desenvolvido para ajudar a controlar e organizar produtos em estoque. O projeto foi desenvolvido utilizando Frontend e BackEnd
+Este é um sistema de gerenciamento de inventário desenvolvido para ajudar a controlar e organizar funcionarios. O projeto foi desenvolvido utilizando Frontend e BackEnd
 
 ## Funcionalidades
 
@@ -16,9 +15,8 @@ Este é um sistema de gerenciamento de inventário desenvolvido para ajudar a co
 
 ## Tecnologias Utilizadas
 
-- **Backend**: Node.js, Express, MongoDB
-- **Frontend**: React, Redux
-- **Autenticação**: JWT (JSON Web Token)
+- **Backend**: Node.js, Postgres, Prisma, Postman
+- **Frontend**: React, Redux, Nextjs, MUI, Tailwind, Recharts
 - **Estilização**: CSS, TailwindCSS
 - **Nextjs** - https://nextjs.org/docs/getting-started/installation
 - **Redux Toolkit w/ Nextjs** - https://redux-toolkit.js.org/usage/nextjs
@@ -71,6 +69,3 @@ pnpm dev
 # or
 bun dev
 ```
-
- 
-
