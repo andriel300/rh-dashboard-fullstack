@@ -1,0 +1,386 @@
+[
+  {
+    "id": 4,
+    "employeeId": 4,
+    "terminationDate": "2022-03-29T00:00:00.000000Z",
+    "reason": "Layoff",
+    "createdAt": "2024-07-31T19:05:01.022285Z",
+    "updatedAt": "2024-07-31T19:05:01.022292Z"
+  },
+  {
+    "id": 5,
+    "employeeId": 5,
+    "terminationDate": null,
+    "reason": "Layoff",
+    "createdAt": "2024-07-31T19:05:01.022334Z",
+    "updatedAt": "2024-07-31T19:05:01.022338Z"
+  },
+  {
+    "id": 7,
+    "employeeId": 7,
+    "terminationDate": "2022-11-01T00:00:00.000000Z",
+    "reason": "Layoff",
+    "createdAt": "2024-07-31T19:05:01.022445Z",
+    "updatedAt": "2024-07-31T19:05:01.022451Z"
+  },
+  {
+    "id": 9,
+    "employeeId": 9,
+    "terminationDate": "2022-07-21T00:00:00.000000Z",
+    "reason": "Layoff",
+    "createdAt": "2024-07-31T19:05:01.022551Z",
+    "updatedAt": "2024-07-31T19:05:01.022559Z"
+  },
+  {
+    "id": 10,
+    "employeeId": 10,
+    "terminationDate": null,
+    "reason": "Layoff",
+    "createdAt": "2024-07-31T19:05:01.022600Z",
+    "updatedAt": "2024-07-31T19:05:01.022610Z"
+  },
+  {
+    "id": 11,
+    "employeeId": 11,
+    "terminationDate": null,
+    "reason": "Layoff",
+    "createdAt": "2024-07-31T19:05:01.022647Z",
+    "updatedAt": "2024-07-31T19:05:01.022652Z"
+  },
+  {
+    "id": 14,
+    "employeeId": 14,
+    "terminationDate": null,
+    "reason": "Layoff",
+    "createdAt": "2024-07-31T19:05:01.022785Z",
+    "updatedAt": "2024-07-31T19:05:01.022790Z"
+  },
+  {
+    "id": 16,
+    "employeeId": 16,
+    "terminationDate": null,
+    "reason": "Layoff",
+    "createdAt": "2024-07-31T19:05:01.022878Z",
+    "updatedAt": "2024-07-31T19:05:01.022884Z"
+  },
+  {
+    "id": 18,
+    "employeeId": 18,
+    "terminationDate": "2023-09-13T00:00:00.000000Z",
+    "reason": "Layoff",
+    "createdAt": "2024-07-31T19:05:01.022967Z",
+    "updatedAt": "2024-07-31T19:05:01.022972Z"
+  },
+  {
+    "id": 19,
+    "employeeId": 19,
+    "terminationDate": "2021-04-12T00:00:00.000000Z",
+    "reason": "Layoff",
+    "createdAt": "2024-07-31T19:05:01.023017Z",
+    "updatedAt": "2024-07-31T19:05:01.023022Z"
+  },
+  {
+    "id": 20,
+    "employeeId": 20,
+    "terminationDate": "2024-08-20T00:00:00.000000Z",
+    "reason": "Layoff",
+    "createdAt": "2024-07-31T19:05:01.023064Z",
+    "updatedAt": "2024-07-31T19:05:01.023069Z"
+  },
+  {
+    "id": 23,
+    "employeeId": 23,
+    "terminationDate": null,
+    "reason": "Layoff",
+    "createdAt": "2024-07-31T19:05:01.023189Z",
+    "updatedAt": "2024-07-31T19:05:01.023194Z"
+  },
+  {
+    "id": 27,
+    "employeeId": 27,
+    "terminationDate": null,
+    "reason": "Layoff",
+    "createdAt": "2024-07-31T19:05:01.023377Z",
+    "updatedAt": "2024-07-31T19:05:01.023382Z"
+  },
+  {
+    "id": 28,
+    "employeeId": 28,
+    "terminationDate": null,
+    "reason": "Layoff",
+    "createdAt": "2024-07-31T19:05:01.023424Z",
+    "updatedAt": "2024-07-31T19:05:01.023428Z"
+  },
+  {
+    "id": 29,
+    "employeeId": 29,
+    "terminationDate": null,
+    "reason": "Layoff",
+    "createdAt": "2024-07-31T19:05:01.023465Z",
+    "updatedAt": "2024-07-31T19:05:01.023470Z"
+  },
+  {
+    "id": 30,
+    "employeeId": 30,
+    "terminationDate": null,
+    "reason": "Layoff",
+    "createdAt": "2024-07-31T19:05:01.023533Z",
+    "updatedAt": "2024-07-31T19:05:01.023538Z"
+  },
+  {
+    "id": 34,
+    "employeeId": 34,
+    "terminationDate": null,
+    "reason": "Layoff",
+    "createdAt": "2024-07-31T19:05:01.023716Z",
+    "updatedAt": "2024-07-31T19:05:01.023720Z"
+  },
+  {
+    "id": 35,
+    "employeeId": 35,
+    "terminationDate": null,
+    "reason": "Layoff",
+    "createdAt": "2024-07-31T19:05:01.023755Z",
+    "updatedAt": "2024-07-31T19:05:01.023760Z"
+  },
+  {
+    "id": 36,
+    "employeeId": 36,
+    "terminationDate": null,
+    "reason": "Layoff",
+    "createdAt": "2024-07-31T19:05:01.023797Z",
+    "updatedAt": "2024-07-31T19:05:01.023802Z"
+  },
+  {
+    "id": 38,
+    "employeeId": 38,
+    "terminationDate": null,
+    "reason": "Layoff",
+    "createdAt": "2024-07-31T19:05:01.023880Z",
+    "updatedAt": "2024-07-31T19:05:01.023886Z"
+  },
+  {
+    "id": 39,
+    "employeeId": 39,
+    "terminationDate": null,
+    "reason": "Layoff",
+    "createdAt": "2024-07-31T19:05:01.023927Z",
+    "updatedAt": "2024-07-31T19:05:01.023931Z"
+  },
+  {
+    "id": 40,
+    "employeeId": 40,
+    "terminationDate": "2022-05-06T00:00:00.000000Z",
+    "reason": "Layoff",
+    "createdAt": "2024-07-31T19:05:01.023974Z",
+    "updatedAt": "2024-07-31T19:05:01.023979Z"
+  },
+  {
+    "id": 41,
+    "employeeId": 41,
+    "terminationDate": "2024-11-14T00:00:00.000000Z",
+    "reason": "Layoff",
+    "createdAt": "2024-07-31T19:05:01.024021Z",
+    "updatedAt": "2024-07-31T19:05:01.024026Z"
+  },
+  {
+    "id": 42,
+    "employeeId": 42,
+    "terminationDate": null,
+    "reason": "Layoff",
+    "createdAt": "2024-07-31T19:05:01.024060Z",
+    "updatedAt": "2024-07-31T19:05:01.024065Z"
+  },
+  {
+    "id": 45,
+    "employeeId": 45,
+    "terminationDate": null,
+    "reason": "Layoff",
+    "createdAt": "2024-07-31T19:05:01.024203Z",
+    "updatedAt": "2024-07-31T19:05:01.024207Z"
+  },
+  {
+    "id": 46,
+    "employeeId": 46,
+    "terminationDate": null,
+    "reason": "Layoff",
+    "createdAt": "2024-07-31T19:05:01.024242Z",
+    "updatedAt": "2024-07-31T19:05:01.024248Z"
+  },
+  {
+    "id": 52,
+    "employeeId": 52,
+    "terminationDate": null,
+    "reason": "Layoff",
+    "createdAt": "2024-07-31T19:05:01.024491Z",
+    "updatedAt": "2024-07-31T19:05:01.024495Z"
+  },
+  {
+    "id": 55,
+    "employeeId": 55,
+    "terminationDate": "2023-10-18T00:00:00.000000Z",
+    "reason": "Layoff",
+    "createdAt": "2024-07-31T19:05:01.024639Z",
+    "updatedAt": "2024-07-31T19:05:01.024646Z"
+  },
+  {
+    "id": 56,
+    "employeeId": 56,
+    "terminationDate": null,
+    "reason": "Layoff",
+    "createdAt": "2024-07-31T19:05:01.024682Z",
+    "updatedAt": "2024-07-31T19:05:01.024687Z"
+  },
+  {
+    "id": 58,
+    "employeeId": 58,
+    "terminationDate": null,
+    "reason": "Layoff",
+    "createdAt": "2024-07-31T19:05:01.024762Z",
+    "updatedAt": "2024-07-31T19:05:01.024767Z"
+  },
+  {
+    "id": 61,
+    "employeeId": 61,
+    "terminationDate": "2024-11-04T00:00:00.000000Z",
+    "reason": "Layoff",
+    "createdAt": "2024-07-31T19:05:01.024917Z",
+    "updatedAt": "2024-07-31T19:05:01.024923Z"
+  },
+  {
+    "id": 62,
+    "employeeId": 62,
+    "terminationDate": "2023-08-31T00:00:00.000000Z",
+    "reason": "Layoff",
+    "createdAt": "2024-07-31T19:05:01.024985Z",
+    "updatedAt": "2024-07-31T19:05:01.024991Z"
+  },
+  {
+    "id": 64,
+    "employeeId": 64,
+    "terminationDate": null,
+    "reason": "Layoff",
+    "createdAt": "2024-07-31T19:05:01.025206Z",
+    "updatedAt": "2024-07-31T19:05:01.025210Z"
+  },
+  {
+    "id": 65,
+    "employeeId": 65,
+    "terminationDate": "2022-03-23T00:00:00.000000Z",
+    "reason": "Layoff",
+    "createdAt": "2024-07-31T19:05:01.025316Z",
+    "updatedAt": "2024-07-31T19:05:01.025324Z"
+  },
+  {
+    "id": 68,
+    "employeeId": 68,
+    "terminationDate": null,
+    "reason": "Layoff",
+    "createdAt": "2024-07-31T19:05:01.025467Z",
+    "updatedAt": "2024-07-31T19:05:01.025473Z"
+  },
+  {
+    "id": 69,
+    "employeeId": 69,
+    "terminationDate": "2023-12-12T00:00:00.000000Z",
+    "reason": "Layoff",
+    "createdAt": "2024-07-31T19:05:01.025526Z",
+    "updatedAt": "2024-07-31T19:05:01.025533Z"
+  },
+  {
+    "id": 73,
+    "employeeId": 73,
+    "terminationDate": "2024-06-03T00:00:00.000000Z",
+    "reason": "Layoff",
+    "createdAt": "2024-07-31T19:05:01.025758Z",
+    "updatedAt": "2024-07-31T19:05:01.025765Z"
+  },
+  {
+    "id": 75,
+    "employeeId": 75,
+    "terminationDate": null,
+    "reason": "Layoff",
+    "createdAt": "2024-07-31T19:05:01.025844Z",
+    "updatedAt": "2024-07-31T19:05:01.025847Z"
+  },
+  {
+    "id": 77,
+    "employeeId": 77,
+    "terminationDate": null,
+    "reason": "Layoff",
+    "createdAt": "2024-07-31T19:05:01.025932Z",
+    "updatedAt": "2024-07-31T19:05:01.025939Z"
+  },
+  {
+    "id": 85,
+    "employeeId": 85,
+    "terminationDate": null,
+    "reason": "Layoff",
+    "createdAt": "2024-07-31T19:05:01.026254Z",
+    "updatedAt": "2024-07-31T19:05:01.026259Z"
+  },
+  {
+    "id": 87,
+    "employeeId": 87,
+    "terminationDate": "2021-05-03T00:00:00.000000Z",
+    "reason": "Layoff",
+    "createdAt": "2024-07-31T19:05:01.026318Z",
+    "updatedAt": "2024-07-31T19:05:01.026325Z"
+  },
+  {
+    "id": 90,
+    "employeeId": 90,
+    "terminationDate": "2024-09-04T00:00:00.000000Z",
+    "reason": "Layoff",
+    "createdAt": "2024-07-31T19:05:01.026466Z",
+    "updatedAt": "2024-07-31T19:05:01.026469Z"
+  },
+  {
+    "id": 92,
+    "employeeId": 92,
+    "terminationDate": null,
+    "reason": "Layoff",
+    "createdAt": "2024-07-31T19:05:01.026564Z",
+    "updatedAt": "2024-07-31T19:05:01.026570Z"
+  },
+  {
+    "id": 94,
+    "employeeId": 94,
+    "terminationDate": null,
+    "reason": "Layoff",
+    "createdAt": "2024-07-31T19:05:01.026673Z",
+    "updatedAt": "2024-07-31T19:05:01.026677Z"
+  },
+  {
+    "id": 95,
+    "employeeId": 95,
+    "terminationDate": "2021-07-11T00:00:00.000000Z",
+    "reason": "Layoff",
+    "createdAt": "2024-07-31T19:05:01.026733Z",
+    "updatedAt": "2024-07-31T19:05:01.026736Z"
+  },
+  {
+    "id": 96,
+    "employeeId": 96,
+    "terminationDate": "2024-09-20T00:00:00.000000Z",
+    "reason": "Layoff",
+    "createdAt": "2024-07-31T19:05:01.026794Z",
+    "updatedAt": "2024-07-31T19:05:01.026798Z"
+  },
+  {
+    "id": 99,
+    "employeeId": 99,
+    "terminationDate": null,
+    "reason": "Layoff",
+    "createdAt": "2024-07-31T19:05:01.026891Z",
+    "updatedAt": "2024-07-31T19:05:01.026894Z"
+  },
+  {
+    "id": 100,
+    "employeeId": 100,
+    "terminationDate": null,
+    "reason": "Layoff",
+    "createdAt": "2024-07-31T19:05:01.026914Z",
+    "updatedAt": "2024-07-31T19:05:01.026917Z"
+  }
+]

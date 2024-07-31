@@ -1,11 +1,14 @@
 {
   "name": "backend",
   "module": "index.ts",
-  "type": "module",
+  "scripts": {
+    "seed": "ts-node prisma/seed.ts"
+  },
   "devDependencies": {
     "@types/bun": "latest",
     "@types/node": "^22.0.0",
-    "ts-node": "^10.9.2"
+    "ts-node": "^10.9.2",
+    "typescript": "^5.5.4"
   },
   "peerDependencies": {
     "typescript": "^5.5.4"

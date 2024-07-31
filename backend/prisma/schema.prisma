@@ -13,101 +13,96 @@ datasource db {
     url      = env("DATABASE_URL")
 }
 
-model Empregado {
-    empregado_id        Int                   @id @default(autoincrement())
-    nome                String
-    sobrenome           String
-    data_nascimento     DateTime
-    cpf                 String                @unique
-    endereco            String?
-    telefone            String?
-    email               String?
-    data_contratacao    DateTime
-    genero              String
-    cargo_id            Int
-    departamento_id     Int
-    Folha_de_Pagamento  Folha_de_Pagamento[]
-    Empregado_Beneficio Empregado_Beneficio[]
-    Historico_Cargo     Historico_Cargo[]
-    Controle_Ponto      Controle_Ponto[]
-    Demissao            Demissao?
+model Employee {
+    id              Int              @id @default(autoincrement())
+    firstName       String
+    lastName        String
+    birthDate       DateTime
+    hireDate        DateTime
+    terminationDate DateTime?
+    gender          Gender
+    race            Race
+    employmentType  EmploymentType
+    position        Position
+    state           String
+    status          EmploymentStatus
+    createdAt       DateTime         @default(now())
+    updatedAt       DateTime         @updatedAt
+    Hiring          Hiring?
+    Termination     Termination?
+    State           State?           @relation(fields: [stateId], references: [id])
+    stateId         Int?
 
-    Cargo        Cargo        @relation(fields: [cargo_id], references: [cargo_id])
-    Departamento Departamento @relation(fields: [departamento_id], references: [departamento_id])
+    @@index([state])
+    @@index([status])
+    @@index([employmentType])
+    @@index([position])
+    @@index([race])
 }
 
-model Departamento {
-    departamento_id Int         @id @default(autoincrement())
-    nome            String
-    localizacao     String?
-    Empregados      Empregado[]
+enum Gender {
+    MALE
+    FEMALE
+    OTHER
 }
 
-model Cargo {
-    cargo_id        Int               @id @default(autoincrement())
-    titulo          String
-    salario_base    Float
-    descricao       String?
-    Empregados      Empregado[]
-    Historico_Cargo Historico_Cargo[]
+enum Race {
+    WHITE
+    BLACK
+    BROWN
+    ASIAN
+    INDIGENOUS
 }
 
-model Folha_de_Pagamento {
-    folha_pagamento_id Int      @id @default(autoincrement())
-    empregado_id       Int
-    data_pagamento     DateTime
-    salario_bruto      Float
-    deducoes           Float?
-    salario_liquido    Float
-
-    Empregado Empregado @relation(fields: [empregado_id], references: [empregado_id])
+enum EmploymentType {
+    CLT
+    PJ
+    INTERN
+    TEMP
 }
 
-model Beneficio {
-    beneficio_id        Int                   @id @default(autoincrement())
-    nome                String
-    descricao           String?
-    Empregado_Beneficio Empregado_Beneficio[]
+enum Position {
+    ANALYST
+    COORDINATOR
+    MANAGER
+    SUPERVISOR
+    DIRECTOR
+    EXECUTIVE
 }
 
-model Empregado_Beneficio {
-    empregado_beneficio_id Int       @id @default(autoincrement())
-    empregado_id           Int
-    beneficio_id           Int
-    data_inicio            DateTime
-    data_fim               DateTime?
-
-    Empregado Empregado @relation(fields: [empregado_id], references: [empregado_id])
-    Beneficio Beneficio @relation(fields: [beneficio_id], references: [beneficio_id])
+enum EmploymentStatus {
+    ACTIVE
+    INACTIVE
 }
 
-model Demissao {
-    demissao_id   Int      @id @default(autoincrement())
-    empregado_id  Int      @unique
-    data_demissao DateTime
-    motivo        String?
-    tipo          String
+model Hiring {
+    id         Int            @id @default(autoincrement())
+    employeeId Int            @unique
+    hireDate   DateTime
+    hireType   EmploymentType
+    position   Position
+    createdAt  DateTime       @default(now())
+    updatedAt  DateTime       @updatedAt
 
-    Empregado Empregado @relation(fields: [empregado_id], references: [empregado_id])
+    Employee Employee @relation(fields: [employeeId], references: [id])
 }
 
-model Historico_Cargo {
-    historico_cargo_id Int       @id @default(autoincrement())
-    empregado_id       Int
-    cargo_id           Int
-    data_inicio        DateTime
-    data_fim           DateTime?
+model Termination {
+    id              Int      @id @default(autoincrement())
+    employeeId      Int      @unique
+    terminationDate DateTime
+    reason          String
+    createdAt       DateTime @default(now())
+    updatedAt       DateTime @updatedAt
 
-    Empregado Empregado @relation(fields: [empregado_id], references: [empregado_id])
-    Cargo     Cargo     @relation(fields: [cargo_id], references: [cargo_id])
+    Employee Employee @relation(fields: [employeeId], references: [id])
 }
 
-model Controle_Ponto {
-    controle_ponto_id Int       @id @default(autoincrement())
-    empregado_id      Int
-    data              DateTime
-    hora_entrada      DateTime?
-    hora_saida        DateTime?
+model State {
+    id        Int      @id @default(autoincrement())
+    name      String   @unique
+    createdAt DateTime @default(now())
+    updatedAt DateTime @updatedAt
 
-    Empregado Empregado @relation(fields: [empregado_id], references: [empregado_id])
+    employees Employee[]
 }
