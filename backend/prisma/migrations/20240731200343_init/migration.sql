@@ -51,7 +51,7 @@ CREATE TABLE "Hiring" (
 CREATE TABLE "Termination" (
     "id" SERIAL NOT NULL,
     "employeeId" INTEGER NOT NULL,
-    "terminationDate" TIMESTAMP(3) NOT NULL,
+    "terminationDate" TIMESTAMP(3),
     "reason" TEXT NOT NULL,
     "createdAt" TIMESTAMP(3) NOT NULL DEFAULT CURRENT_TIMESTAMP,
     "updatedAt" TIMESTAMP(3) NOT NULL,

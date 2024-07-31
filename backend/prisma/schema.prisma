@@ -88,12 +88,12 @@ model Hiring {
 }
 
 model Termination {
-    id              Int      @id @default(autoincrement())
-    employeeId      Int      @unique
-    terminationDate DateTime
+    id              Int       @id @default(autoincrement())
+    employeeId      Int       @unique
+    terminationDate DateTime?
     reason          String
-    createdAt       DateTime @default(now())
-    updatedAt       DateTime @updatedAt
+    createdAt       DateTime  @default(now())
+    updatedAt       DateTime  @updatedAt
 
     Employee Employee @relation(fields: [employeeId], references: [id])
 }
