@@ -2,7 +2,10 @@
   "name": "backend",
   "module": "index.ts",
   "scripts": {
-    "seed": "ts-node prisma/seed.ts"
+    "seed": "ts-node prisma/seed.ts",
+    "build": "rimraf dist && npx tsc",
+    "start": "bun run build && node dist/index.ts",
+    "dev": "bun run build && concurrently \"bunx tsc -w\" \"nodemon --exec ts-node src/index.ts\""
   },
   "devDependencies": {
     "@types/bun": "latest",
