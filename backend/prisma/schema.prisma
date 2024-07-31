@@ -5,10 +5,109 @@
 // Try Prisma Accelerate: https://pris.ly/cli/accelerate-init
 
 generator client {
-  provider = "prisma-client-js"
+    provider = "prisma-client-js"
 }
 
 datasource db {
-  provider = "postgresql"
-  url      = env("DATABASE_URL")
+    provider = "postgresql"
+    url      = env("DATABASE_URL")
+}
+
+model Empregado {
+    empregado_id        Int                   @id @default(autoincrement())
+    nome                String
+    sobrenome           String
+    data_nascimento     DateTime
+    cpf                 String                @unique
+    endereco            String?
+    telefone            String?
+    email               String?
+    data_contratacao    DateTime
+    genero              String
+    cargo_id            Int
+    departamento_id     Int
+    Folha_de_Pagamento  Folha_de_Pagamento[]
+    Empregado_Beneficio Empregado_Beneficio[]
+    Historico_Cargo     Historico_Cargo[]
+    Controle_Ponto      Controle_Ponto[]
+    Demissao            Demissao?
+
+    Cargo        Cargo        @relation(fields: [cargo_id], references: [cargo_id])
+    Departamento Departamento @relation(fields: [departamento_id], references: [departamento_id])
+}
+
+model Departamento {
+    departamento_id Int         @id @default(autoincrement())
+    nome            String
+    localizacao     String?
+    Empregados      Empregado[]
+}
+
+model Cargo {
+    cargo_id        Int               @id @default(autoincrement())
+    titulo          String
+    salario_base    Float
+    descricao       String?
+    Empregados      Empregado[]
+    Historico_Cargo Historico_Cargo[]
+}
+
+model Folha_de_Pagamento {
+    folha_pagamento_id Int      @id @default(autoincrement())
+    empregado_id       Int
+    data_pagamento     DateTime
+    salario_bruto      Float
+    deducoes           Float?
+    salario_liquido    Float
+
+    Empregado Empregado @relation(fields: [empregado_id], references: [empregado_id])
+}
+
+model Beneficio {
+    beneficio_id        Int                   @id @default(autoincrement())
+    nome                String
+    descricao           String?
+    Empregado_Beneficio Empregado_Beneficio[]
+}
+
+model Empregado_Beneficio {
+    empregado_beneficio_id Int       @id @default(autoincrement())
+    empregado_id           Int
+    beneficio_id           Int
+    data_inicio            DateTime
+    data_fim               DateTime?
+
+    Empregado Empregado @relation(fields: [empregado_id], references: [empregado_id])
+    Beneficio Beneficio @relation(fields: [beneficio_id], references: [beneficio_id])
+}
+
+model Demissao {
+    demissao_id   Int      @id @default(autoincrement())
+    empregado_id  Int      @unique
+    data_demissao DateTime
+    motivo        String?
+    tipo          String
+
+    Empregado Empregado @relation(fields: [empregado_id], references: [empregado_id])
+}
+
+model Historico_Cargo {
+    historico_cargo_id Int       @id @default(autoincrement())
+    empregado_id       Int
+    cargo_id           Int
+    data_inicio        DateTime
+    data_fim           DateTime?
+
+    Empregado Empregado @relation(fields: [empregado_id], references: [empregado_id])
+    Cargo     Cargo     @relation(fields: [cargo_id], references: [cargo_id])
+}
+
+model Controle_Ponto {
+    controle_ponto_id Int       @id @default(autoincrement())
+    empregado_id      Int
+    data              DateTime
+    hora_entrada      DateTime?
+    hora_saida        DateTime?
+
+    Empregado Empregado @relation(fields: [empregado_id], references: [empregado_id])
 }

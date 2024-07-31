@@ -1,0 +1,20 @@
+{
+  "Folha_de_Pagamento": [
+    {
+      "folha_pagamento_id": 1,
+      "empregado_id": 1,
+      "data_pagamento": "2023-06-30",
+      "salario_bruto": 4500.0,
+      "deducoes": 500.0,
+      "salario_liquido": 4000.0
+    },
+    {
+      "folha_pagamento_id": 2,
+      "empregado_id": 2,
+      "data_pagamento": "2023-06-30",
+      "salario_bruto": 6500.0,
+      "deducoes": 500.0,
+      "salario_liquido": 6000.0
+    }
+  ]
+}

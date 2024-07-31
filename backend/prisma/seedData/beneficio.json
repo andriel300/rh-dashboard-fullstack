@@ -1,0 +1,14 @@
+{
+  "Beneficio": [
+    {
+      "beneficio_id": 1,
+      "nome": "Plano de Saúde",
+      "descricao": "Plano de saúde completo."
+    },
+    {
+      "beneficio_id": 2,
+      "nome": "Vale Alimentação",
+      "descricao": "Cartão de vale alimentação mensal."
+    }
+  ]
+}

@@ -1,0 +1,11 @@
+{
+  "Demissao": [
+    {
+      "demissao_id": 1,
+      "empregado_id": 1,
+      "data_demissao": "2023-01-31",
+      "motivo": "Rescisão",
+      "tipo": "V"
+    }
+  ]
+}

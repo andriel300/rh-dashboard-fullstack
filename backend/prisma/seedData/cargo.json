@@ -1,0 +1,16 @@
+{
+  "Cargo": [
+    {
+      "cargo_id": 1,
+      "titulo": "Analista de RH",
+      "salario_base": 4000.0,
+      "descricao": "Responsável pela gestão de pessoas."
+    },
+    {
+      "cargo_id": 2,
+      "titulo": "Desenvolvedor",
+      "salario_base": 6000.0,
+      "descricao": "Responsável pelo desenvolvimento de sistemas."
+    }
+  ]
+}
